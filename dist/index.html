@@ -24,11 +24,20 @@
       </div>
       <div class="shelf" aria-label="Book shelf">
         <button class="book featured" id="openBook">
+          <span class="complete-badge" id="marsBadge" hidden>✓ Completed</span>
           <span class="book-stars">✦　·　✧</span>
           <span class="book-kicker">Parker &amp; Pine presents</span>
           <strong>Johnny<br>Builds to<br><em>Mars!</em></strong>
           <span class="rocket">🚀</span>
           <span class="author">A build-it-yourself adventure</span>
+        </button>
+        <button class="book mini-book" id="moonBook">
+          <span class="complete-badge" id="moonBadge" hidden>✓ Completed</span>
+          <span class="book-stars">✦　☾　✦</span>
+          <span class="book-kicker">A tiny three-page story</span>
+          <strong>The Moon<br><em>Picnic</em></strong>
+          <span class="rocket">🧺</span>
+          <span class="author">Pack a snack for space</span>
         </button>
         <div class="shelf-edge"></div>
       </div>
@@ -52,6 +61,7 @@
           <h2 id="pageTitle"></h2>
           <p id="storyText"></p>
           <div class="prompt" id="prompt"></div>
+          <button class="finish-book" id="finishBook" hidden>✓ Finish this book</button>
         </div>
       </article>
 
